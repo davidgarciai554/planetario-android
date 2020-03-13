@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/tierra"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Tierra" />
+        <item
+            android:id="@+id/jupiter"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Jupiter" />
+        <item
+            android:id="@+id/marte"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Marte" />
+        <item
+            android:id="@+id/mercurio"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Mercurio" />
+        <item
+            android:id="@+id/neptuno"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Neptuno" />
+        <item
+            android:id="@+id/pluton"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Plutón" />
+        <item
+            android:id="@+id/saturno"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Saturno" />
+        <item
+            android:id="@+id/urano"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Urano" />
+        <item
+            android:id="@+id/venus"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Venus" />
+    </group>
+</menu>

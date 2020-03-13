@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.planetario2k20.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.planetario2k20.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tierra"
+        android:name="com.example.planetario2k20.tierra"
+        android:label="Tierra"
+        tools:layout="@layout/tierra" />
+    <fragment
+        android:id="@+id/jupiter"
+        android:name="com.example.planetario2k20.jupiter"
+        android:label="Jupiter"
+        tools:layout="@layout/jupiter" />
+    <fragment
+        android:id="@+id/marte"
+        android:name="com.example.planetario2k20.marte"
+        android:label="Marte"
+        tools:layout="@layout/marte" />
+    <fragment
+        android:id="@+id/mercurio"
+        android:name="com.example.planetario2k20.mercurio"
+        android:label="Mercurio"
+        tools:layout="@layout/mercurio" />
+    <fragment
+        android:id="@+id/neptuno"
+        android:name="com.example.planetario2k20.neptuno"
+        android:label="Neptuno"
+        tools:layout="@layout/neptuno" />
+    <fragment
+        android:id="@+id/pluton"
+        android:name="com.example.planetario2k20.pluton"
+        android:label="Plutón"
+        tools:layout="@layout/pluton" />
+    <fragment
+        android:id="@+id/saturno"
+        android:name="com.example.planetario2k20.saturno"
+        android:label="Saturno"
+        tools:layout="@layout/saturno" />
+    <fragment
+        android:id="@+id/urano"
+        android:name="com.example.planetario2k20.urano"
+        android:label="Urano"
+        tools:layout="@layout/urano" />
+    <fragment
+        android:id="@+id/venus"
+        android:name="com.example.planetario2k20.venus"
+        android:label="Venus"
+        tools:layout="@layout/venus" />
+
+</navigation>
